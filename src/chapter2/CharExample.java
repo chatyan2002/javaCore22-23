@@ -4,14 +4,23 @@ public class CharExample {
     public static void main(String[] args) {
 //        char a = '\'';
 //        System.out.println(a);
-        int a = 10;
-        int x = 21;
+//        int a = 10;
+//        int x = 21;
+//
+//        if (x == 2 * a){
+//            System.out.println("true");
+//        }else {
+//                System.out.println("false");
+//            }
 
-        if (x == 2 * a){
-            System.out.println("true");
+        char a = '%';
+        boolean b = a == '&';
+        System.out.println("a is true");
+        if (b == true){
+            System.out.println("a is %");
         }else {
-                System.out.println("false");
-            }
+            System.out.println("a is not %");
+        }
 
     }
 }
