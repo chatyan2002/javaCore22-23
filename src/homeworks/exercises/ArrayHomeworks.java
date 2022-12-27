@@ -23,12 +23,21 @@ public class ArrayHomeworks {
 //
 //
 
-        int min = array[1];
+//        int min = array[1];
+//        for (int i = 0; i < array.length; i++){
+//            if (array[i] < min){
+//                min = array[i];
+//            }
+//        }
+//        System.out.println("min =" + min);
+
+        int sum = array[0];
+        int result = 0;
+//        int i;
         for (int i = 0; i < array.length; i++){
-            if (array[i] < min){
-                min = array[i];
-            }
+            result = result + array[i];
+
         }
-        System.out.println("min =" + min);
+        System.out.println("mijin tv =" + result / array.length);
     }
 }
