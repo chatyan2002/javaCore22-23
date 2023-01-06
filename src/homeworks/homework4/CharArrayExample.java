@@ -5,25 +5,21 @@ public class CharArrayExample {
         // #1
         char[] chars = {'j', 'a', 'v', 'a', 'l', 'o', 'v', 'e'};
         char c = 'o';
-        boolean found = false;
         int count = 0;
 
         for (int x : chars) {
             if (x == c) {
-                found = true;
                 count++;
             }
         }
-
-        if (found)
             System.out.println(c);
         System.out.println("yndhanur = " + count);
 
         System.out.println();
         // #2
         char[] chars2 = {'j', 'a', 'v', 'a', 'l', 'o', 'v', 'e'};
-        System.out.print(chars2[chars2.length / 2 - 1]);
-        System.out.print(chars2[chars2.length / 2]);
+        System.out.print(chars2[chars2.length / 2 ]);
+       // System.out.print(chars2[chars2.length / 2 - 1]);
 
         System.out.println();
 
