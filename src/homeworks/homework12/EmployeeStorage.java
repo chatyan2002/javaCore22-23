@@ -49,16 +49,16 @@ public class EmployeeStorage {
         return null;
     }
 
-    public void searchByEmployeeCompanyName(String companyName) {
+    public void searchEmployeeByCompany(Company company) {
         boolean found = false;
         for (int i = 0; i < size; i++) {
             Employee employee = employees[i];
-            if (employee.getCompany().contains(companyName)) {
+            if (employee.getCompany().equals(company)) {
                 System.out.println(employee);
             }
         }
         if (!found) {
-            System.out.println("employee width " + companyName + " dos not exists");
+            System.out.println("employee width " + company + " dos not exists");
         }
     }
 

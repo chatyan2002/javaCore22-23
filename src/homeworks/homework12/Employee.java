@@ -10,13 +10,15 @@ public class Employee {
     private String surname;
     private String employeeId;
     private double salary;
-    private String company;
+    private Company company;
     private String position;
     private boolean active = true;
     private Date registerDate;
-
     private Date dateOfBirthday;
-    public Employee(String name, String surname, String employeeId, double salary, String company, String position, Date registerDate,Date dateOfBirthday) {
+
+    public Employee(String name, String surname, String employeeId,
+                    double salary, Company company, String position,
+                    Date registerDate, Date dateOfBirthday) {
         this.name = name;
         this.surname = surname;
         this.employeeId = employeeId;
@@ -25,6 +27,9 @@ public class Employee {
         this.position = position;
         this.registerDate = registerDate;
         this.dateOfBirthday = dateOfBirthday;
+    }
+
+    public Employee(String poxos, String poxosyan, String a111, int salary, String epam, String director, Date registerDate, Date dateOfBirthday) {
     }
 
     public Date getDateOfBirthday() {
@@ -83,11 +88,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public String getCompany() {
+    public Company getCompany() {
         return company;
     }
 
-    public void setCompany(String company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 
@@ -122,8 +127,8 @@ public class Employee {
                 ", company='" + company + '\'' +
                 ", position='" + position + '\'' +
                 ", active=" + active +
-                ", registerDate=" + registerDate +
-                ", dateOfBirthday=" + dateOfBirthday +
+                ", registerDate=" + DateUtil.dateToString(registerDate) +
+                ", dateOfBirthday=" + DateUtil.dateToString(dateOfBirthday) +
                 '}';
     }
 }
